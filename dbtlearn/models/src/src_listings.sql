@@ -15,4 +15,4 @@ SELECT
     created_at,
     updated_at
 
-FROM raw_listings
+FROM {{ source('airbnb', 'listings') }}
